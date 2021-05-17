@@ -1,0 +1,73 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+.nmr-7 {
+  margin-right: 7px !important;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+}
+.gallery-item {
+  position: relative;
+  background-color: beige;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+.gallery-item p {
+  font-weight: 600;
+  white-space: nowrap;
+  color: blueviolet;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gallery-item h2 {
+  position: absolute;
+  top: -9px;
+  font-size: 14px;
+  line-height: 14px;
+  left: 9px;
+  padding: 5px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.gallery-item img {
+  width: 100%;
+  cursor: pointer;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+.pform {
+  margin-bottom: 20px;
+}
+.pinput {
+  padding: 3px 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  margin-right: 7px;
+  border-radius: 4px;
+}
+.pbtn {
+  padding: 3px 30px;
+  font-size: 16px;
+  background-color: orange;
+  border: 1px solid orange;
+  color: #fff;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.pbtn:hover {
+  background-color: rgb(180, 117, 0);
+  box-shadow: 1px 1px 4px 1px #333;
+}
